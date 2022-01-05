@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xmxe</groupId>
+    <artifactId>authorization_code_redis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>令牌储存redis http://www.javaboy.org/2020/0417/oauth2-redis.html</description>
+
+    <modules>
+        <module>auth-server-redis</module>
+        <module>client-app-redis</module>
+        <module>user-server-redis</module>
+    </modules>
+
+</project>

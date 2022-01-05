@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xmxe</groupId>
+    <artifactId>jwt</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>http://www.javaboy.org/2020/0421/oauth2-jwt.html</description>
+
+    <modules>
+        <module>auth-server-jwt</module>
+        <module>client-app-jwt</module>
+        <module>user-server-jwt</module>
+    </modules>
+
+</project>
