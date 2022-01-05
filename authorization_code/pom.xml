@@ -8,12 +8,12 @@
     <artifactId>authorization_code</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>项目demo http://www.javaboy.org/2020/0414/oauth2_authorization_code.html</description>
+    <description>授权码模式</description>
 
     <modules>
-        <module>auth-server</module>
-        <module>client-app</module>
-        <module>user-server</module>
+        <module>auth-server-code</module>
+        <module>client-app-code</module>
+        <module>user-server-code</module>
     </modules>
 
 </project>
