@@ -8,7 +8,7 @@
     <artifactId>password</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>密码模式 http://www.javaboy.org/2020/0415/oauth2-password-implicit.html</description>
+    <description>密码模式</description>
 
     <modules>
         <module>auth-server-password</module>

@@ -11,7 +11,7 @@
     <groupId>com.xmxe</groupId>
     <artifactId>auth-server-password</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>auth</name>
+    <name>auth-server-password</name>
     <description>授权服务器</description>
 
     <properties>

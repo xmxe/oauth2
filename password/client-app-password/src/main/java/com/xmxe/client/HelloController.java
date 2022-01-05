@@ -31,15 +31,16 @@ public class HelloController {
         map.add("username", username);
         map.add("password", password);
         map.add("client_secret", "123");
-        map.add("client_id", "javaboy");
+        map.add("client_id", "xmxe");
         map.add("grant_type", "password");
         Map<String,String> resp = restTemplate.postForObject("http://localhost:8080/oauth/token", map, Map.class);
-        System.out.println(resp);
+        System.out.println("返回结果="+resp);
         String access_token = resp.get("access_token");
-        System.out.println(access_token);
+        System.out.println("access_token="+access_token);
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Bearer " + access_token);
         HttpEntity<Object> httpEntity = new HttpEntity<>(headers);
+        // 请求资源服务器
         ResponseEntity<String> entity = restTemplate.exchange("http://localhost:8081/admin/hello", HttpMethod.GET, httpEntity, String.class);
         model.addAttribute("msg", entity.getBody());
         return "index";

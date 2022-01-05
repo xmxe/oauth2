@@ -11,7 +11,7 @@
     <groupId>com.xmxe</groupId>
     <artifactId>user-server-password</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>res</name>
+    <name>user-server-password</name>
     <description>资源服务器</description>
 
     <properties>
