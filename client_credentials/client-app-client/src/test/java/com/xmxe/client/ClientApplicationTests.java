@@ -21,11 +21,13 @@ class ClientApplicationTests {
     @Test
     void contextLoads() {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
-        map.add("client_id", "javaboy");
+        map.add("client_id", "xmxe");
         map.add("client_secret", "123");
         map.add("grant_type", "client_credentials");
         Map<String,String> resp = restTemplate.postForObject("http://localhost:8080/oauth/token", map, Map.class);
         String access_token = resp.get("access_token");
+        System.out.println("access_token="+access_token);
+
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Bearer " + access_token);
         HttpEntity<Object> httpEntity = new HttpEntity<>(headers);

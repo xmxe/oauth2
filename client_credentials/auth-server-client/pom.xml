@@ -11,7 +11,7 @@
     <groupId>com.xmxe</groupId>
     <artifactId>auth-server-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>auth</name>
+    <name>auth-server-client</name>
     <description>授权服务器</description>
 
     <properties>

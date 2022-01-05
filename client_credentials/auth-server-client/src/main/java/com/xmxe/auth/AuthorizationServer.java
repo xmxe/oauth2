@@ -44,7 +44,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("javaboy")
+                .withClient("xmxe")
                 .secret(new BCryptPasswordEncoder().encode("123"))
                 .resourceIds("res1")
                 .authorizedGrantTypes("client_credentials","refresh_token")
