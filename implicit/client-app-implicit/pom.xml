@@ -11,7 +11,7 @@
     <groupId>com.xmxe</groupId>
     <artifactId>client-app-implicit</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>client</name>
+    <name>client-app-implicit</name>
     <description>第三方app</description>
 
     <properties>
