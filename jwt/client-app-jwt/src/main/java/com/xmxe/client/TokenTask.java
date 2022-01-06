@@ -25,7 +25,7 @@ public class TokenTask {
         if ("".equals(access_token) && code != null) {
             MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
             map.add("code", code);
-            map.add("client_id", "javaboy");
+            map.add("client_id", "xmxe");
             map.add("client_secret", "123");
             map.add("redirect_uri", "http://localhost:8082/index.html");
             map.add("grant_type", "authorization_code");
@@ -39,6 +39,9 @@ public class TokenTask {
         }
     }
 
+    /**
+     * 请求资源服务器
+     */
     private String loadDataFromResServer() {
         try {
             HttpHeaders headers = new HttpHeaders();
@@ -54,7 +57,7 @@ public class TokenTask {
     @Scheduled(cron = "0 55 0/1 * * ？")
     public void tokenTask() {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
-        map.add("client_id", "javaboy");
+        map.add("client_id", "xmxe");
         map.add("client_secret", "123");
         map.add("refresh_token", refresh_token);
         map.add("grant_type", "refresh_token");

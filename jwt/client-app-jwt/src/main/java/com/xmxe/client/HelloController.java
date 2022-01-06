@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HelloController {
     @Autowired
     TokenTask tokenTask;
+
     @GetMapping("/index.html")
     public String hello(String code, Model model) {
         model.addAttribute("msg", tokenTask.getData(code));

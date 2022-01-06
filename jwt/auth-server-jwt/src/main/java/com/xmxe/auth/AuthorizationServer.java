@@ -35,6 +35,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
     @Bean
     ClientDetailsService clientDetailsService() {
+        // 从mysql获取第三方应用相关的信息 如client_id scope resourcesId等
         return new JdbcClientDetailsService(dataSource);
     }
 
@@ -45,6 +46,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
         services.setSupportRefreshToken(true);
         services.setTokenStore(tokenStore);
         TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
+        // 在 DefaultTokenServices 中配置 TokenEnhancer，将之前的 JwtAccessTokenConverter 和 CustomAdditionalInformation 两个实例注入进来即可
         tokenEnhancerChain.setTokenEnhancers(Arrays.asList(jwtAccessTokenConverter, customAdditionalInformation));
         services.setTokenEnhancer(tokenEnhancerChain);
         return services;
