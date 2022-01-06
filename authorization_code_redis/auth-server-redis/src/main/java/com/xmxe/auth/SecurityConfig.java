@@ -15,14 +15,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("sang")
+                .withUser("xmxe")
                 .password(new BCryptPasswordEncoder().encode("123"))
                 .roles("admin")
                 .and()
-                .withUser("javaboy")
+                .withUser("test")
                 .password(new BCryptPasswordEncoder().encode("123"))
                 .roles("user");
     }

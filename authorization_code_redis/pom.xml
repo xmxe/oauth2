@@ -8,7 +8,7 @@
     <artifactId>authorization_code_redis</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>令牌储存redis http://www.javaboy.org/2020/0417/oauth2-redis.html</description>
+    <description>令牌储入redis</description>
 
     <modules>
         <module>auth-server-redis</module>

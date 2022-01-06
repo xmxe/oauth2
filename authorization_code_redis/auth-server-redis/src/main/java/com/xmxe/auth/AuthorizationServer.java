@@ -25,11 +25,21 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
     TokenStore tokenStore;
     @Autowired
     DataSource dataSource;
+
+    /**
+     * 客户端的信息写死了，不好维护，如果有很多第三方应用接入，那就得写很长的代码
+     * 所以配置将客户端信息放入数据库，从数据库读取客户信息
+     */
     @Bean
     ClientDetailsService clientDetailsService() {
         return new JdbcClientDetailsService(dataSource);
     }
 
+    /**
+     * 我们也可以将令牌有效期配置在数据库中，这样就不用在代码中配置了
+     * services.setAccessTokenValiditySeconds(60 * 60 * 2);
+     * services.setRefreshTokenValiditySeconds(60 * 60 * 24 * 3);
+     */
     @Bean
     AuthorizationServerTokenServices tokenServices() {
         DefaultTokenServices services = new DefaultTokenServices();

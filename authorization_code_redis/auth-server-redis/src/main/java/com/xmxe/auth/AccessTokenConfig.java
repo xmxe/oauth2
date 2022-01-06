@@ -11,6 +11,8 @@ import org.springframework.security.oauth2.provider.token.store.redis.RedisToken
 public class AccessTokenConfig {
     @Autowired
     RedisConnectionFactory redisConnectionFactory;
+
+    // 令牌存入redis
     @Bean
     TokenStore tokenStore() {
         return new RedisTokenStore(redisConnectionFactory);
