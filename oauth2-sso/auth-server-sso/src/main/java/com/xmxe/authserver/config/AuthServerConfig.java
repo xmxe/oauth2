@@ -22,7 +22,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("javaboy")
+                .withClient("xmxe")
                 .secret(passwordEncoder.encode("123"))
                 .autoApprove(true)
                 .redirectUris("http://localhost:1112/login", "http://localhost:1113/login")
