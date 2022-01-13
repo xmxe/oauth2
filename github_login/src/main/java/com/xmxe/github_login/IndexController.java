@@ -29,7 +29,7 @@ public class IndexController {
         Map<String, String> map = new HashMap<>();
         map.put("client_id", "xxx");
         map.put("client_secret", "xxx");
-        map.put("state", "javaboy");
+        map.put("state", "custom_state");
         map.put("code", code);
         map.put("redirect_uri", "http://localhost:8080/authorization_code");
         Map<String,String> resp = restTemplate.postForObject("https://github.com/login/oauth/access_token", map, Map.class);
