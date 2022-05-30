@@ -14,3 +14,5 @@
 | github_login             | [分分钟让自己的网站接入 GitHub 第三方登录功能](https://mp.weixin.qq.com/s/tq4Q306J3hJFEtGL1EpOBA)              |
 
 - [妹子始终没搞懂 OAuth 2.0，今天整合 Spring Cloud Security 一次说明白！](https://mp.weixin.qq.com/s/i8hvrKPSCwlzpmt_p52ZbA)
+- [快速接入 GitHub、QQ 第三方登录真有那么难吗？](https://mp.weixin.qq.com/s/l1vll9aSL1IzjsI-DhbtUw)
+
