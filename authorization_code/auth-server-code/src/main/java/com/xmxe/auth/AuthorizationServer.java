@@ -16,7 +16,9 @@ import org.springframework.security.oauth2.provider.token.AuthorizationServerTok
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 
-// 开启授权服务器的自动化配置
+/**
+ * 开启授权服务器的自动化配置
+ */
 @EnableAuthorizationServer
 @Configuration
 public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {

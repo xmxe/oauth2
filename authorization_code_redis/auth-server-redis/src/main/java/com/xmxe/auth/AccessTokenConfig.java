@@ -12,7 +12,9 @@ public class AccessTokenConfig {
     @Autowired
     RedisConnectionFactory redisConnectionFactory;
 
-    // 令牌存入redis
+    /**
+     * 令牌存入redis
+     */
     @Bean
     TokenStore tokenStore() {
         return new RedisTokenStore(redisConnectionFactory);

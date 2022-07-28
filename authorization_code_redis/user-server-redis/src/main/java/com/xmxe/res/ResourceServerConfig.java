@@ -14,7 +14,6 @@ import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     /**
      * 只允许xmxe访问资源
-     *
      */
     @Bean
     RemoteTokenServices tokenServices() {
