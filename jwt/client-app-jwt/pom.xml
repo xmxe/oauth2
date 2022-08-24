@@ -3,20 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
-        <relativePath/>
+        <groupId>com.xmxe</groupId>
+        <artifactId>jwt</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
     <groupId>com.xmxe</groupId>
     <artifactId>client-app-jwt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>client-app-jwt</name>
     <description>第三方app</description>
-
-    <properties>
-        <java.version>11</java.version>
-    </properties>
 
     <dependencies>
         <dependency>
