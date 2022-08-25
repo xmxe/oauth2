@@ -46,8 +46,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <optional>true</optional>
         </dependency>
         <!-- JustAuth1.9.4版本后，如果需要使用支付宝登录，需要单独引用该依赖 -->
         <!--<dependency>
@@ -113,7 +111,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.0.RELEASE</version>
+                <!-- <version>2.3.0.RELEASE</version> -->
                 <configuration>
                     <mainClass>me.zhyd.justauth.JustauthDemoApplication</mainClass>
                     <includeSystemScope>true</includeSystemScope>
