@@ -1,5 +1,5 @@
 
-#####  简介
+###  简介
 
 > fork from [oauth2-samples](https://github.com/lenve/oauth2-samples)
 
@@ -16,9 +16,9 @@
 
 ---
 
-##### OAuth2.0的四种模式
+### OAuth2.0的四种模式
 
-###### 授权码模式
+#### 授权码模式
 这种方式是最常用的流程，安全性也最高，它适用于那些有后端的Web应用。授权码通过前端传送，令牌则是储存在后端，而且所有与资源服务器的通信都在后端完成。这样的前后端分离，可以避免令牌泄漏。令牌获取的流程如下：
 
 ![授权码模式](https://mmbiz.qpic.cn/mmbiz_png/19cc2hfD2rCpPJB83SvgzosiboTJxftAhibgOZffmU9RnmNUusomvBtoUKaxEXIU1df2icbUZOwSUeG4G0DxWgjtQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
@@ -76,7 +76,7 @@ http://xxxx?code=NMoj5y
 ```
 access_token则是颁发的令牌，refresh_token是刷新令牌，一旦令牌失效则携带这个令牌进行刷新。
 
-###### 简化模式
+#### 简化模式
 这种模式不常用，主要针对那些无后台的系统，直接通过web跳转授权，流程如下图：
 
 ![简化模式](https://mmbiz.qpic.cn/mmbiz_png/19cc2hfD2rCpPJB83SvgzosiboTJxftAhxGsEsTxPIovmxbYqEqregcCE7o0h7fvcjkGSrdtXqUxFfs4EwqbegQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
@@ -105,7 +105,7 @@ https://xxxx#token=NPmdj5
 ```
 token=NPmdj5这一段后面携带的就是认证中心携带的，令牌为NPmdj5。
 
-###### 密码模式
+#### 密码模式
 
 密码模式也很简单，直接通过用户名、密码获取令牌，流程如下：
 ![密码模式](https://mmbiz.qpic.cn/mmbiz_png/19cc2hfD2rCpPJB83SvgzosiboTJxftAhxGsEsTxPIovmxbYqEqregcCE7o0h7fvcjkGSrdtXqUxFfs4EwqbegQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
@@ -141,7 +141,7 @@ client_secret：客户端的秘钥
 ```
 access_token则是颁发的令牌，refresh_token是刷新令牌，一旦令牌失效则携带这个令牌进行刷新。
 
-###### 客户端模式
+#### 客户端模式
 适用于没有前端的命令行应用，即在命令行下请求令牌。
 这种方式给出的令牌，是针对第三方应用的，而不是针对用户的，即有可能多个用户共享同一个令牌。流程如下：
 
@@ -172,7 +172,7 @@ client_secret：客户端秘钥
 ```
 ---
 
-##### 相关文章
+### 相关文章
 
 - [妹子始终没搞懂OAuth 2.0，今天整合Spring Cloud Security一次说明白！](https://mp.weixin.qq.com/s/i8hvrKPSCwlzpmt_p52ZbA)
 - [快速接入GitHub、QQ第三方登录真有那么难吗？](https://mp.weixin.qq.com/s/l1vll9aSL1IzjsI-DhbtUw)
